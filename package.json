@@ -1,0 +1,35 @@
+{
+  "name": "storm-nav",
+  "version": "0.1.1",
+  "description": "",
+  "author": "stormid",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mjbp/storm-nav.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mjbp/storm-component-nav/issues"
+  },
+  "main": "dist/storm-component-nav.min.js",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-header": "^1.8.7",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.4",
+    "run-sequence": "^1.2.2",
+    "storm-attributelist": "^0.2.0"
+  },
+  "keywords": [
+    "stormid",
+    "boilerplate",
+    "component"
+  ],
+  "dependencies": {
+    "storm-attributelist": "^0.2.0"
+  }
+}
