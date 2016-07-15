@@ -77,6 +77,14 @@
                 opacity:0;
             }
         }
+        .breadcrumb {
+            position:fixed;
+            bottom:40px;
+        }
+        .breadcrumb a {
+            display:inline-block;
+            margin:0 0 0 5px;
+        }
     </style>
 </head>
 <body>
@@ -84,19 +92,19 @@
     <div class="js-nav">
 
         <nav class="nav-primary__tabs">
-                <a class="js-nav-tab" href="#resources">
+                <a class="js-nav-trigger" href="#resources">
                     Resources
                     <div class="meter">
                         <span style="width: 36%">69%</span>
                     </div>
                 </a>
-                <a class="js-nav-tab" href="#nature">
+                <a class="js-nav-trigger" href="#nature">
                     Nature
                     <div class="meter">
                         <span style="width: 0%">0%</span>
                     </div>
                 </a>
-                <a class="js-nav-tab " href="#community">
+                <a class="js-nav-trigger" href="#community">
                     Community
                     <div class="meter">
                         <span style="width: 0%">0%</span>
@@ -104,9 +112,9 @@
                 </a>
         </nav>
 
-            <section id="resources" class="nav_primary__section">
+            <section id="resources" class="js-nav-target nav_primary__section">
 
-                <h2 class="js-nav-title nav_primary__section-title">Resources</h2>
+                <h2 class="js-nav-trigger nav_primary__section-title">Resources</h2>
 
                 <div class="nav_primary__section-inner">
 
@@ -171,9 +179,9 @@
                 </div>
 
             </section>
-            <section id="nature" class="nav_primary__section">
+            <section id="nature" class="js-nav-target nav_primary__section">
 
-                <h2 class="js-nav-title nav_primary__section-title">Nature</h2>
+                <h2 class="js-nav-trigger nav_primary__section-title">Nature</h2>
 
                 <div class="nav_primary__section-inner">
 
@@ -185,9 +193,9 @@
                 </div>
 
             </section>
-            <section id="community" class="nav_primary__section">
+            <section id="community" class="js-nav-target nav_primary__section">
 
-                <h2 class="js-nav-title nav_primary__section-title">Community</h2>
+                <h2 class="js-nav-trigger nav_primary__section-title">Community</h2>
 
                 <div class="nav_primary__section-inner">
 
@@ -210,6 +218,12 @@
 
 </div>
 
+
+<nav class="breadcrumb">
+    <a href="#resources" class="js-nav-trigger">Resources</a>
+    <a href="#nature" class="js-nav-trigger">Nature</a>
+    <a href="#community" class="js-nav-trigger">Community</a>
+</nav>
 <script src="/./js/app.js"></script>
 
 </body>
